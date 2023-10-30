@@ -3,3 +3,7 @@
 Pulsar el botón del menu superior donde pone Current Branch.
 Pulsar el botón nueva rama y poner el nombre y tarea
 ej: tarea3-pantalla-de-productos-lili-rubim
+
+
+## CHECKOUT
+Cambiarse de rama
