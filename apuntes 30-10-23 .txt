@@ -7,3 +7,8 @@ ej: tarea3-pantalla-de-productos-lili-rubim
 
 ## CHECKOUT
 Cambiarse de rama
+
+## MERGE
+
+Posicionar en main y elegir la rama para fusionar.
+*siempre dar fetch y pull em ambas ramas antes de fusionar (merge)
