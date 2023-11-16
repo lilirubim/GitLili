@@ -15,33 +15,84 @@
             <input type="text" name="firstName" id="firstName">
             <br>
         </div>
+        <br>
 
         <div>
-            <label for="email">Correo electrónico</label>
-            <input type="email" name="email" id="email">
+            <label for="lastName">Apellido</label>
+            <input type="text" name="lastName" id="lastName">
             <br>
         </div>
-
+        <br>
+        <div>
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+        </div>
+        <br>
         <div>
             <label for="age">Edad</label>
             <input type="number" name="age" id="age">
             <br>
         </div>
-
+        <br>
         <div>
-            <label for="salary">Salary</label>
-            <input type="number" name="salary" id="salary" step="200">
-            <br>
+            <label for="gender">Genero</label>
+            
+            <div>
+                <input type="radio" id="male" name="genre" value="male">
+                <label for="male">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" id="female" name="genre" value="female">
+                <label for="female">Femenino</label>
+            </div>
+            <div>
+                <input type="radio" id="other" name="genre" value="other">
+                <label for="other">Otro</label>
+            </div>
         </div>
-
+        <br>
+        <div>        
+            <label for="nif">NIF/DNI/NIE</label>
+            <input type="text" name="NIF" id="NIF" placeholder="00000000A">
+          
+        </div>
+        <br>
         <div>
             <label for="weight">Weight</label>
             <input type="number" name="weight" id="weight" step="0.01">
             <br>
         </div>
+        <br>
+        <div>
+            <label for="bio">Biografia</label>
+            <textarea type="bio" name="bio" rows="10" cols="30" minlength="10" maxlength="100">
+            </textarea>
 
 
+        </div>
+        <br>
+
+        <div>
+            <input type="checkbox" name="terms" id="terms" required>
+           
+            <label for="terms">He leido y acepto los
+                <a href="#">terminos y condiciones.</a>
+            </label>
+            </div>
+        <br>
+       <div>
+        <button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>No soy un robot</button>
+      
+       </div>
+          <br> 
+        <br>   
         <button type="submit">Enviar</button>
+
+      
     </form>
 
  
