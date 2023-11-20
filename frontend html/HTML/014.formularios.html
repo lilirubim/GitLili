@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    
+    <form action="/backend" method="post">
+
+        <div>
+            <label for="firstName">Nombre</label>
+            <input type="text" name="firstName" id="firstName">
+            <br>
+        </div>
+        <br>
+
+        <div>
+            <label for="lastName">Apellido</label>
+            <input type="text" name="lastName" id="lastName">
+            <br>
+        </div>
+        <br>
+        <div>
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+        </div>
+        <br>
+        <div>
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass" id="pass">
+            <button onclick="showPassword">Mostrar password</button>
+        </div>
+        <br>
+        <div>
+            <label for="age">Edad</label>
+            <input type="number" name="age" id="age">
+            <br>
+        </div>
+        <br>
+        <div>
+            <label for="gender">Genero</label>
+            
+            <div>
+                <input type="radio" id="male" name="genre" value="male">
+                <label for="male">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" id="female" name="genre" value="female">
+                <label for="female">Femenino</label>
+            </div>
+            <div>
+                <input type="radio" id="other" name="genre" value="other">
+                <label for="other">Otro</label>
+            </div>
+        </div>
+        <br>
+        <div>        
+            <label for="nif">NIF/DNI/NIE</label>
+            <input type="text" name="NIF" id="NIF" placeholder="00000000A">
+          
+        </div>
+        <br>
+        <div>
+            <label for="weight">Weight</label>
+            <input type="number" name="weight" id="weight" step="0.01">
+            <br>
+        </div>
+        <br>
+        <div>
+            <label for="company">Empresa:</label>
+            <select name="company" id="company">
+                <option value="0" disabled selected>Seleccionar empresa</option>
+                <option value="adecco"> Fundación Adecco</option>
+                <option value="certidevs">CertiDevs</option>
+                <option value="cosmicDevelopments">Cosmic Developement</option>
+
+            </select>
+
+        </div>
+        <br>
+        <div>
+            <label for="knowledge">Lenguajes de programación conocidos</label>
+            <select name="knowlwdge" id="knowledge" multiple>
+                <option value="" disabled selected>Seleccionar lenguaje</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+            </select>
+
+        </div>
+        <br>
+        <div>
+            <label for="bio">Biografia</label>
+            <textarea type="bio" name="bio" rows="10" cols="30" minlength="10" maxlength="100">
+            </textarea>
+
+
+        </div>
+        <br>
+        <div>
+            <label for="birthDate">Fecha de nacimiento</label>
+            <input type="date" id="birthDate" name="birthDate" min="2010-01-01" max="2023-12-31">
+        </div>
+     
+        <div>
+            <label for="courseDateTime">Fecha de comienzo del curso</label>
+            <input type="datetime-local" id="courseDateTime" name="courseDateTime">
+        </div>
+        
+        <br>
+        <div>
+            <input type="checkbox" name="terms" id="terms" required>
+           
+            <label for="terms">He leido y acepto los
+                <a href="#">terminos y condiciones.</a>
+            </label>
+            </div>
+        <br>
+       <div>
+        <button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>No soy un robot</button>
+      
+       </div>
+          <br> 
+        
+        <br>   
+        <button type="submit">Enviar</button>
+
+      
+    </form>
+
+    <script>
+        function showPassword() {
+            let passInput = document.getElementByI('pass');
+            if (passInput.type === "password") {
+                passInput.type = 'text';
+            } else { 
+                passInput.type = 'password';
+            }
+        }
+    </script>
+ 
+</body>
+</html>
