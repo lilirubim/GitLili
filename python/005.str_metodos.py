@@ -46,3 +46,4 @@ print(f"El producto seleccionado es {producto} con precio {precio} euros.")
 # replace(x,y) reemplaza las ocurrencias del primer valor por el segun valor
 texto.replace
 print(texto.replace('Java', 'Python'))
+print("lili rubim".replace(" ", "")) # reemplaza todos los espacios por nada, es decir, los elimina
