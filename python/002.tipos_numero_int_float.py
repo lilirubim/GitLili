@@ -1,3 +1,4 @@
+
 edad = 30 # nùmero entero
 
 peso = 80.34 #número con decimales
