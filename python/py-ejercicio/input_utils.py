@@ -29,12 +29,11 @@ altura = read_float('Introduce tu altura: ')
 
             
 def read_bool(prompt):
-    while True:
-        try:
-            respuesta = input(prompt)
-            booleano = respuesta.lower() in ['si', 'yes', 'sí'] # devuelve el valor leìdo por consola
-            return booleano
-        except Exception:
-            print('No se ha podido leer el texto') 
+
+    respuesta = input(prompt)
+    booleano = respuesta.lower() in ['si', 'yes', 'sí'] # devuelve el valor leìdo por consola
+    return booleano
+        
             
 texto =  read_bool('Eres guapa? ')
+print(f'Por supuesto {texto}')
