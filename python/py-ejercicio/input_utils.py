@@ -12,7 +12,7 @@ def read_int(prompt):
         except Exception:
             print('No se ha podido leer el número int')
             
-edad = read_int('Introduce tu edad: ')
+#edad = read_int('Introduce tu edad: ')
      
      
                 
@@ -24,16 +24,32 @@ def read_float(prompt):
         except Exception:
             print('No se ha podido leer el número float')    
 
-altura = read_float('Introduce tu altura: ')    
+#altura = read_float('Introduce tu altura: ')    
 
 
             
 def read_bool(prompt):
 
-    respuesta = input(prompt)
-    booleano = respuesta.lower() in ['si', 'yes', 'sí'] # devuelve el valor leìdo por consola
-    return booleano
+    #respuesta = input(prompt)
+    #booleano = respuesta.lower() in ['si', 'yes', 'sí'] # devuelve el valor leìdo por consola
+    #return booleano
+
+# otra opción para el mismo bool
+
+    while True:
+        try:
+            resultado = input(prompt).lower()
+            if resultado == 'si':
+                return True
+            elif resultado == 'no':
+                return False
+            else:
+                print('Valor incorrecto')
+                #no te saca del bucle, repite otra interación hasta que escriba si
         
+        except Exception:
+            print('No se ha podido leer')
             
-texto =  read_bool('Eres guapa? ')
-print(f'Por supuesto {texto}')
+
+#texto =  read_bool('Eres guapa? ')
+#print(f'Por supuesto {texto}')

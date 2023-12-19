@@ -18,5 +18,7 @@ print(f"alumno_a_calificar {alumno_a_calificar}")
 
 
 
+# eliminar la lista
 
+phones.clear()
 
